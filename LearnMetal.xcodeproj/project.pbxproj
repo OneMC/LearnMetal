@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5413010A2A92FCB300FF2853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541301092A92FCB300FF2853 /* AppDelegate.swift */; };
+		5413010E2A92FCB300FF2853 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5413010D2A92FCB300FF2853 /* ViewController.swift */; };
+		541301132A92FCB500FF2853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 541301122A92FCB500FF2853 /* Assets.xcassets */; };
+		541301162A92FCB500FF2853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541301142A92FCB500FF2853 /* LaunchScreen.storyboard */; };
+		5413011E2A9305A100FF2853 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5413011D2A9305A100FF2853 /* MetalView.swift */; };
+		541301212A93063A00FF2853 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541301202A93063A00FF2853 /* MetalKit.framework */; };
+		541301232A930A7C00FF2853 /* Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541301222A930A7C00FF2853 /* Render.swift */; };
+		541D6BEC2AA1C61100073C97 /* TriangleRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541D6BEB2AA1C61100073C97 /* TriangleRender.swift */; };
+		541D6BEE2AA1C77E00073C97 /* TriangleShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 541D6BED2AA1C77E00073C97 /* TriangleShader.metal */; };
+		541E30B52AB3052500AEB5A0 /* Image.tga in Resources */ = {isa = PBXBuildFile; fileRef = 5428E21D2AB1D061009248BD /* Image.tga */; };
+		5428E2112AB1615B009248BD /* TextureRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5428E2102AB1615B009248BD /* TextureRender.swift */; };
+		5428E2172AB1AF1B009248BD /* TextureShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 5428E2162AB1AF1B009248BD /* TextureShader.metal */; };
+		5428E21C2AB1B80D009248BD /* AAPLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5428E21A2AB1B80D009248BD /* AAPLImage.m */; };
+		54EA656F2AB7FE1E00E6AFC3 /* tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EA656E2AB7FE1E00E6AFC3 /* tools.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		541301062A92FCB300FF2853 /* LearnMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		541301092A92FCB300FF2853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5413010D2A92FCB300FF2853 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		541301122A92FCB500FF2853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		541301152A92FCB500FF2853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		541301172A92FCB500FF2853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5413011D2A9305A100FF2853 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		541301202A93063A00FF2853 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		541301222A930A7C00FF2853 /* Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Render.swift; sourceTree = "<group>"; };
+		541301272A9321F000FF2853 /* LearnMetal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LearnMetal-Bridging-Header.h"; sourceTree = "<group>"; };
+		5413012B2A93344E00FF2853 /* MST_Triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MST_Triangle.h; sourceTree = "<group>"; };
+		541D6BEB2AA1C61100073C97 /* TriangleRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleRender.swift; sourceTree = "<group>"; };
+		541D6BED2AA1C77E00073C97 /* TriangleShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TriangleShader.metal; sourceTree = "<group>"; };
+		5428E2102AB1615B009248BD /* TextureRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureRender.swift; sourceTree = "<group>"; };
+		5428E2162AB1AF1B009248BD /* TextureShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TextureShader.metal; sourceTree = "<group>"; };
+		5428E21A2AB1B80D009248BD /* AAPLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLImage.m; sourceTree = "<group>"; };
+		5428E21B2AB1B80D009248BD /* AAPLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLImage.h; sourceTree = "<group>"; };
+		5428E21D2AB1D061009248BD /* Image.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Image.tga; sourceTree = "<group>"; };
+		5428E21E2AB1D19B009248BD /* MST_BasicTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MST_BasicTexture.h; sourceTree = "<group>"; };
+		54EA656E2AB7FE1E00E6AFC3 /* tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tools.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		541301032A92FCB300FF2853 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541301212A93063A00FF2853 /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		541300FD2A92FCB300FF2853 = {
+			isa = PBXGroup;
+			children = (
+				541301082A92FCB300FF2853 /* LearnMetal */,
+				541301072A92FCB300FF2853 /* Products */,
+				5413011F2A93063900FF2853 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		541301072A92FCB300FF2853 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				541301062A92FCB300FF2853 /* LearnMetal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		541301082A92FCB300FF2853 /* LearnMetal */ = {
+			isa = PBXGroup;
+			children = (
+				54EA656D2AB7FC2B00E6AFC3 /* utils */,
+				541D6BEF2AA1CBFC00073C97 /* vc */,
+				5413012C2A93349D00FF2853 /* render */,
+				541301122A92FCB500FF2853 /* Assets.xcassets */,
+				541301142A92FCB500FF2853 /* LaunchScreen.storyboard */,
+				541301172A92FCB500FF2853 /* Info.plist */,
+				541301272A9321F000FF2853 /* LearnMetal-Bridging-Header.h */,
+			);
+			path = LearnMetal;
+			sourceTree = "<group>";
+		};
+		5413011F2A93063900FF2853 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				541301202A93063A00FF2853 /* MetalKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5413012C2A93349D00FF2853 /* render */ = {
+			isa = PBXGroup;
+			children = (
+				5428E2132AB1A7A3009248BD /* texture */,
+				5428E2122AB1A78F009248BD /* triangle */,
+				541301222A930A7C00FF2853 /* Render.swift */,
+			);
+			path = render;
+			sourceTree = "<group>";
+		};
+		541D6BEF2AA1CBFC00073C97 /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				541301092A92FCB300FF2853 /* AppDelegate.swift */,
+				5413010D2A92FCB300FF2853 /* ViewController.swift */,
+				5413011D2A9305A100FF2853 /* MetalView.swift */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		5428E2122AB1A78F009248BD /* triangle */ = {
+			isa = PBXGroup;
+			children = (
+				541D6BEB2AA1C61100073C97 /* TriangleRender.swift */,
+				541D6BED2AA1C77E00073C97 /* TriangleShader.metal */,
+				5413012B2A93344E00FF2853 /* MST_Triangle.h */,
+			);
+			path = triangle;
+			sourceTree = "<group>";
+		};
+		5428E2132AB1A7A3009248BD /* texture */ = {
+			isa = PBXGroup;
+			children = (
+				5428E21D2AB1D061009248BD /* Image.tga */,
+				5428E2102AB1615B009248BD /* TextureRender.swift */,
+				5428E2162AB1AF1B009248BD /* TextureShader.metal */,
+				5428E21E2AB1D19B009248BD /* MST_BasicTexture.h */,
+			);
+			path = texture;
+			sourceTree = "<group>";
+		};
+		54EA656D2AB7FC2B00E6AFC3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				5428E21B2AB1B80D009248BD /* AAPLImage.h */,
+				5428E21A2AB1B80D009248BD /* AAPLImage.m */,
+				54EA656E2AB7FE1E00E6AFC3 /* tools.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		541301052A92FCB300FF2853 /* LearnMetal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5413011A2A92FCB500FF2853 /* Build configuration list for PBXNativeTarget "LearnMetal" */;
+			buildPhases = (
+				541301022A92FCB300FF2853 /* Sources */,
+				541301032A92FCB300FF2853 /* Frameworks */,
+				541301042A92FCB300FF2853 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearnMetal;
+			productName = LearnMetal;
+			productReference = 541301062A92FCB300FF2853 /* LearnMetal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		541300FE2A92FCB300FF2853 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					541301052A92FCB300FF2853 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 541301012A92FCB300FF2853 /* Build configuration list for PBXProject "LearnMetal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 541300FD2A92FCB300FF2853;
+			productRefGroup = 541301072A92FCB300FF2853 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				541301052A92FCB300FF2853 /* LearnMetal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		541301042A92FCB300FF2853 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541E30B52AB3052500AEB5A0 /* Image.tga in Resources */,
+				541301162A92FCB500FF2853 /* LaunchScreen.storyboard in Resources */,
+				541301132A92FCB500FF2853 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		541301022A92FCB300FF2853 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5413011E2A9305A100FF2853 /* MetalView.swift in Sources */,
+				541D6BEC2AA1C61100073C97 /* TriangleRender.swift in Sources */,
+				5428E2172AB1AF1B009248BD /* TextureShader.metal in Sources */,
+				54EA656F2AB7FE1E00E6AFC3 /* tools.swift in Sources */,
+				5413010E2A92FCB300FF2853 /* ViewController.swift in Sources */,
+				541D6BEE2AA1C77E00073C97 /* TriangleShader.metal in Sources */,
+				5413010A2A92FCB300FF2853 /* AppDelegate.swift in Sources */,
+				541301232A930A7C00FF2853 /* Render.swift in Sources */,
+				5428E21C2AB1B80D009248BD /* AAPLImage.m in Sources */,
+				5428E2112AB1615B009248BD /* TextureRender.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		541301142A92FCB500FF2853 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				541301152A92FCB500FF2853 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		541301182A92FCB500FF2853 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		541301192A92FCB500FF2853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5413011B2A92FCB500FF2853 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearnMetal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learn.metal.LearnMetal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/LearnMetal-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5413011C2A92FCB500FF2853 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearnMetal/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.learn.metal.LearnMetal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/LearnMetal-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		541301012A92FCB300FF2853 /* Build configuration list for PBXProject "LearnMetal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541301182A92FCB500FF2853 /* Debug */,
+				541301192A92FCB500FF2853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5413011A2A92FCB500FF2853 /* Build configuration list for PBXNativeTarget "LearnMetal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5413011B2A92FCB500FF2853 /* Debug */,
+				5413011C2A92FCB500FF2853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 541300FE2A92FCB300FF2853 /* Project object */;
+}
